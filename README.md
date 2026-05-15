@@ -72,6 +72,7 @@ QAM-AWGN-simulator/
 │   └── awgn_channel.cpp
 │
 ├── results/
+│   ├── ber_comparison.png
 │   ├── ber_qpsk.txt
 │   ├── ber_qam16.txt
 │   └── ber_qam64.txt
@@ -82,23 +83,7 @@ QAM-AWGN-simulator/
 
 ---
 
-## Компиляция проекта
-
-Компиляция выполняется командой:
-
-```bash
-g++ src/*.cpp -Iinclude -std=c++17 -o qam_sim
-```
-
----
-
 ## Запуск симуляции
-
-Запуск программы:
-
-```bash
-./qam_sim
-```
 
 Тип модуляции выбирается в файле:
 
@@ -118,12 +103,12 @@ std::string modulationType = "QPSK";
 
 ---
 
-## Построение BER-графиков
+## Результаты моделирования
 
-Запуск Python-скрипта:
+Ниже представлен сравнительный BER-график для QPSK, QAM16 и QAM64:
 
-```bash
-python plot_ber.py
+```markdown
+![BER Comparison](results/ber_comparison.png)
 ```
 
 Скрипт строит сравнительные BER-кривые для:
