@@ -107,7 +107,6 @@ std::string modulationType = "QPSK";
 
 Ниже представлен сравнительный BER-график для QPSK, QAM16 и QAM64:
 
-```markdown id="jlwmu8"
 ![BER Comparison](results/ber_comparison.png)
 
 
