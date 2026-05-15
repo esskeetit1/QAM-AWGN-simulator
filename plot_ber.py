@@ -43,4 +43,5 @@ plt.title("Сравнение эффективности по BER")
 
 plt.grid(True, which='both')
 plt.legend()
+plt.savefig("results/ber_comparison.png")
 plt.show()
